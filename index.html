@@ -1,0 +1,188 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saleh Alqubasi - Interactive CV</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        .cv-container {
+            max-width: 800px;
+            background: #fff;
+            margin: 0 auto;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        h1 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .contact-info {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 15px;
+        }
+        h3 {
+            color: #2980b9;
+            border-bottom: 1px solid #edf2f7;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .company-meta {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        /* تأثير التوجيه والترجمة الذكية (Tooltip) */
+        .translate-target {
+            position: relative;
+            cursor: pointer;
+            border-bottom: 1px dashed #3498db;
+            display: inline;
+        }
+        .translate-target:hover {
+            color: #2980b9;
+            background-color: #e8f4fd;
+        }
+        .translate-target::after {
+            content: attr(data-ar);
+            position: absolute;
+            bottom: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 13px;
+            white-space: normal;
+            width: 280px;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+            direction: rtl;
+            text-align: right;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            line-height: 1.4;
+        }
+        .translate-target::before {
+            content: "";
+            position: absolute;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 6px;
+            border-style: solid;
+            border-color: #2c3e50 transparent transparent transparent;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+        .translate-target:hover::after,
+        .translate-target:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <h1>Saleh Alqubasi</h1>
+    <div class="contact-info">
+        Riyadh, KSA | 0550929397 | Saleh_alqubasi@outlook.sa | LinkedIn
+    </div>
+
+    <h3>Professional Summary</h3>
+    <p>
+        <span class="translate-target" data-ar="خريج إدارة أعمال يتميز بخبرة شاملة في الإدارة التشغيلية، تطوير الأعمال، وسلاسل الإمداد واللوجستيات.">A results-driven Business Administration graduate with comprehensive experience in operational management, business development, and supply chain logistics.</span>
+        <span class="translate-target" data-ar="يمتلك سجلاً حافلاً في تحسين العمليات، تقليل التكاليف، وإدارة الفرق متعددة المهام عبر قطاعات متنوعة تشمل الخدمات الغذائية، الإنتاج الإعلامي، والاستشارات الهندسية.">Proven track record of streamlining processes, optimizing costs, and managing cross-functional teams across diverse industries including food services, media production, and engineering consulting.</span>
+        <span class="translate-target" data-ar="متمكن بشكل كبير في تنسيق شؤون الموظفين، بناء علاقات العملاء، والتخطيط الاستراتيجي، ومعد لمساعدة الشركات على النمو والكفاءة.">Highly skilled in personnel coordination, client relations, and strategic planning, dedicated to driving business growth and efficiency.</span>
+    </p>
+
+    <h3>Professional Experience</h3>
+
+    <div class="job-title">Business Development & Sales Specialist</div>
+    <div class="company-meta">Al-Mnabr Engineering Consultant | 12/2024 – 09/2025</div>
+    <ul>
+        <li><span class="translate-target" data-ar="تعظيم أداء المبيعات وبناء علاقات مستدامة مع العملاء في قطاعي الشركات والأفراد (B2B & B2C) داخل قطاع الاستشارات الهندسية.">Maximize sales performance and build sustainable B2B and B2C client relationships within the engineering consulting sector.</span></li>
+        <li><span class="translate-target" data-ar="صياغة وتنفيذ استراتيجيات تطوير الأعمال لتوسيع نطاق التواجد في السوق وتحديد فرص تجارية جديدة.">Formulate and execute business development strategies to expand market reach and identify new commercial opportunities.</span></li>
+        <li><span class="translate-target" data-ar="قيادة المفاوضات، إعداد العروض التجارية، والتنسيق مع الأقسام الداخلية لضمان تقديم الخدمات بما يتوافق مع تطلعات العملاء.">Lead negotiations, prepare commercial proposals, and coordinate with internal departments to ensure service delivery aligns with client expectations.</span></li>
+    </ul>
+
+    <div class="job-title">Operations Specialist</div>
+    <div class="company-meta">Benefit for Food Services | 07/2019 – 03/2023</div>
+    <ul>
+        <li><span class="translate-target" data-ar="إدارة العمليات اليومية للمطعم والمطبخ، والإشراف على جدولة الموظفين، تقييم الأداء، وتوزيع الموارد لتحقيق مستهدفات البيع.">Managed daily restaurant and kitchen operations, overseeing staff scheduling, performance evaluations, and resource allocation to meet sales targets.</span></li>
+        <li><span class="translate-target" data-ar="تأسيس وتشغيل مشروع مطبخ سحابي ناجح على نطاق مصغر لاختبار جدوى المفهوم في السوق وتنويع مصادر الدخل.">Established a successful micro-scale cloud kitchen operation to test market viability and diversify revenue streams.</span></li>
+        <li><span class="translate-target" data-ar="قيادة جهود تحسين التواجد الرقمي عبر إدارة ورفع تصنيف المطعم على خرائط جوجل، مما ساهم في زيادة تدفق العملاء وجذب عملاء جدد بشكل مستمر.">Spearheaded digital presence optimization by managing and boosting the restaurant’s ranking on Google Maps, significantly increasing foot traffic and customer acquisition.</span></li>
+        <li><span class="translate-target" data-ar="تنفيذ مبادرات استراتيجية لخفض التكاليف وتبسيط إجراءات العمل، مما أدى إلى رفع الكفاءة العامة ومعايير الجودة.">Implemented strategic cost-saving initiatives and streamlined operational workflows, improving overall efficiency and quality standards.</span></li>
+        <li><span class="translate-target" data-ar="تقديم برامج تدريبية شاملة لطاقم الخدمة والمطبخ لتعزيز رضا العملاء ومواكبة أحدث التوجهات في قطاع الأغذية والمشروبات.">Conducted comprehensive training programs for service and kitchen staff to enhance customer satisfaction and compliance with food trends.</span></li>
+    </ul>
+
+    <div class="job-title">Operations Coordinator</div>
+    <div class="company-meta">Pavo Media Production Co. | 09/2018 – 05/2019</div>
+    <ul>
+        <li><span class="translate-target" data-ar="تنسيق الجوانب اللوجستية، شؤون الموظفين، المعدات، والمالية لمختلف القوالب الإعلامية لضمان سير المشاريع وفقاً للميزانية والنطاق المحددين.">Coordinated logistics, personnel, equipment, and finances for various media formats, ensuring projects progressed within budget and scope.</span></li>
+        <li><span class="translate-target" data-ar="إدارة تدفق العمل ومتابعة تسليمات المشاريع في مواقع التصوير وداخل الاستوديوهات، والتعاون الوثيق مع المنتجين والمشرفين للالتزام بالمواعيد النهائية الصارمة.">Managed workflows and tracked project deliverables on-set and in-studio, collaborating closely with producers and supervisors to hit strict deadlines.</span></li>
+        <li><span class="translate-target" data-ar="العمل كنقطة اتصال رئيسية مع العملاء وفهم متطلبات المحتوى، وإدارة جلسات المراجعة، وضمان التسليم السلس للمواد النهائية.">Acted as the primary point of contact for clients, managing review sessions, collecting feedback, and ensuring seamless delivery of final assets.</span></li>
+        <li><span class="translate-target" data-ar="الاحتفاظ بسجلات إدارية ومالية دقيقة، والمشاركة في إعداد تقارير التسليمات الملخصة وتقارير التكاليف.">Maintained accurate administrative and cost records, participating in the production of deliverable reports and financial summaries.</span></li>
+    </ul>
+
+    <h3>Education</h3>
+    <ul>
+        <li><span class="translate-target" data-ar="بكالوريوس إدارة أعمال | جامعة الإمام محمد بن سعود الإسلامية، 2018"><strong>Bachelor of Business Administration</strong> | Imam Mohammad Ibn Saud Islamic University (IMSIU), 2018</span></li>
+        <li><span class="translate-target" data-ar="دبلوم إدارة اللوجستيات | الأكاديمية السعودية للوجستيات، 2026"><strong>Diploma in Logistics Management</strong> | Saudi Logistics Academy, 2026</span></li>
+    </ul>
+
+    <h3>Certifications & Courses</h3>
+    <ul>
+        <li><span class="translate-target" data-ar="دورة التحضير لإدارة المشاريع المهنية (PMP) – قيد الدراسة">Project Management Preparation (PMP) – <em>In Progress</em></span></li>
+        <li><span class="translate-target" data-ar="المشتريات الفعالة وإدارة الإمداد (2025)">Effective Procurement & Supply Management (2025)</span></li>
+        <li><span class="translate-target" data-ar="دورة إدارة اللوجستيات (2023)">Logistics Management Course (2023)</span></li>
+        <li><span class="translate-target" data-ar="شهادة التخطيط الاستراتيجي (2023)">Strategic Planning Certification (2023)</span></li>
+        <li><span class="translate-target" data-ar="ورشة عمل الأعمال الخاصة بالأمم المتحدة (2022)">United Nations Business Workshop (2022)</span></li>
+    </ul>
+
+    <h3>Core Skills</h3>
+    <ul>
+        <li><strong>Management:</strong> Operations Management, Staff & Personnel Management, Administrative Oversight</li>
+        <li><strong>Business & Sales:</strong> Business Development, B2B & B2C Sales, Client Services, Contract Negotiation</li>
+        <li><strong>Supply Chain:</strong> Procurement, Logistics Handling, SAP Systems</li>
+    </ul>
+</div>
+
+</body>
+</html>
